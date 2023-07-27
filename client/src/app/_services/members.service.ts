@@ -33,10 +33,7 @@ export class MembersService {
     return this.http.put(this.baseUrl + 'users', member).pipe(
       map(() => {
         const index = this.members.indexOf(member);
-        console.log('members', this.members);
-        console.log('index', index);
         this.members[index] = { ...this.members[index], ...member }
-        console.log('?', this.members[index])
       })
     );
   }
