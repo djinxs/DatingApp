@@ -8,8 +8,8 @@ import { map, of } from 'rxjs';
   providedIn: 'root'
 })
 export class MembersService {
-  baseUrl = environment.apiUrl;
-  members: Member[] = [];
+  private baseUrl = environment.apiUrl;
+  private members: Member[] = [];
 
   constructor(private http: HttpClient) { }
 
