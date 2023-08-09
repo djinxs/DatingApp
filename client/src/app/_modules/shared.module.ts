@@ -8,6 +8,8 @@ import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { FileUploadModule } from 'ng2-file-upload';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { TimeagoModule } from "ngx-timeago";
 
 @NgModule({
   declarations: [],
@@ -24,7 +26,9 @@ import { FileUploadModule } from 'ng2-file-upload';
       type: 'line-scale-party'
     }),
     PaginationModule.forRoot(),
+    ButtonsModule.forRoot(),
     FileUploadModule,
+    TimeagoModule.forRoot(),
   ],
   exports: [
     BsDropdownModule,
@@ -34,7 +38,9 @@ import { FileUploadModule } from 'ng2-file-upload';
     NgxGalleryModule,
     NgxSpinnerModule,
     PaginationModule,
+    ButtonsModule,
     FileUploadModule,
+    TimeagoModule,
   ]
 })
 export class SharedModule { }
