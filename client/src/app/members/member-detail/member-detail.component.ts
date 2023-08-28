@@ -39,8 +39,7 @@ export class MemberDetailComponent implements OnInit {
       }
 
     });
-
-    // this.loadMember();
+    this.loadMessages();
     this.galleryOptions = [{
       width: '500px',
       height: '500px',
@@ -86,15 +85,4 @@ export class MemberDetailComponent implements OnInit {
     }
     return imageUrls
   }
-
-  // loadMember() {
-  //   const username = this.route.snapshot.paramMap.get('username');
-  //   if (!username) return;
-  //   this.membersService.getMember(username).subscribe({
-  //     next: member => {
-  //       this.member = member
-  //       this.galleryImages = this.getImages();
-  //     }
-  //   });
-  // }
 }
