@@ -6,6 +6,7 @@ import { Message } from 'src/app/_models/Message';
 import { Member } from 'src/app/_models/member';
 import { MembersService } from 'src/app/_services/members.service';
 import { MessageService } from 'src/app/_services/message.service';
+import { PresenceService } from 'src/app/_services/presence.service';
 
 @Component({
   selector: 'app-member-detail',
@@ -24,6 +25,7 @@ export class MemberDetailComponent implements OnInit {
     private membersService: MembersService,
     private route: ActivatedRoute,
     private messageService: MessageService,
+    public presenceService: PresenceService,
   ) { }
 
   ngOnInit(): void {
